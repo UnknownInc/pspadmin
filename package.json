@@ -1,0 +1,28 @@
+{
+  "name": "pspadmin",
+  "version": "1.0.0",
+  "description": "psp adminui",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serversrc/server.js",
+    "gcb": "flutter build web && gcloud builds submit . --substitutions=SHORT_SHA=$(git rev-parse --short HEAD)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnknownInc/pspadmin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UnknownInc/pspadmin/issues"
+  },
+  "homepage": "https://github.com/UnknownInc/pspadmin#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
